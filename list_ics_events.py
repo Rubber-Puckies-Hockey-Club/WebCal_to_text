@@ -45,7 +45,7 @@ def format_dt(value):
         return ""
     if isinstance(value, datetime):
         central = value.astimezone(CENTRAL_TZ)
-        return central.strftime("%a, %b %d %I:%M %p")
+        return central.strftime("%a, %b %d %-I:%M %p")
     return str(value)
 
 
